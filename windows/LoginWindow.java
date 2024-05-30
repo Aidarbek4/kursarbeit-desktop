@@ -88,7 +88,7 @@ public class LoginWindow extends Stage {
         String role = user.getRole();
         if (role.equals("Admin")) {
             // Открыть окно для админа
-            AdminWindow adminWindow = new AdminWindow();
+            AdminWindow adminWindow = new AdminWindow(user.getUsername());
             adminWindow.show();
         } else if (role.equals("Waiter")) {
             // Открыть окно для официанта
